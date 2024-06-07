@@ -124,11 +124,16 @@ button.delAll{
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10vh;
 }
 
 button.delAll:hover{
     background: #ff004c;
     color: white;
+}
+
+.icon-center{
+    width: 100%;
 }
 
 @media screen and (max-width: 900px) {
