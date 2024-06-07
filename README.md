@@ -18,6 +18,14 @@ Currently, two official plugins are available for enhancing the development expe
 
 ## How to Run
 
-1. **Clone the Repository:**
+1. **Ensure Node.js and npm are installed:**
+   This project requires Node.js and npm to be installed on your machine. If you haven't installed them yet, you can download and install them from [Node.js official website](https://nodejs.org/).
+
+2. **Clone the Repository:**
    ```bash
-   git clone https://github.com/Disaster-Loki/To-Do-List.git
+   git clone https://github.com/Disaster-Loki/To-Do-List.git 
+
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
