@@ -5,9 +5,12 @@ import './TodoList.css';
 function TodoList()
 {
     const listStorege = JSON.parse(localStorage.getItem('List')|| []);
-    //listStorege ? JSON.parse(listStorege) : 
     const [list, setList] = useState(listStorege);
     const [newItem, setNewItem] = useState("");
+
+    useEffect(()=>{
+        localStorage.setItem('List', JSON.stringify(list))
+    },[list]);
 
     function addItem(form){
         form.preventDefault();
