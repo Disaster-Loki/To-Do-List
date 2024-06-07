@@ -33,9 +33,14 @@ button.add{
     color: white;
     cursor: pointer;
     padding: 10px 25px;
-    height: 60px;
+    height: 61px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+button.add:hover{
+    color: white;
+    background: #363f88;
 }
 
 input{
@@ -50,8 +55,31 @@ input{
     color: white;
 }
 
+.listTask{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 600px;
+    margin: auto;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #363b65;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.item:hover{
+    background: #151627;
+}
+
 @media screen and (max-width: 900px) {
     form{
+        width: 100%;
+    }
+    .listTask{
         width: 100%;
     }
 }
