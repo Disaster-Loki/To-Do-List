@@ -4,7 +4,7 @@ import './TodoList.css';
 
 function TodoList()
 {
-    const listStorege = JSON.parse(localStorage.getItem('List')|| []);
+    const listStorege = JSON.parse(localStorage.getItem('List') || []);
     const [list, setList] = useState(listStorege);
     const [newItem, setNewItem] = useState("");
 
