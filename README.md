@@ -23,8 +23,7 @@ Currently, two official plugins are available for enhancing the development expe
 
 2. **Clone the Repository:**
    ```bash
-   git clone https://github.com/Disaster-Loki/To-Do-List.git 
-
+   git clone https://github.com/Disaster-Loki/To-Do-List.git
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
