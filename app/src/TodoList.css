@@ -33,7 +33,7 @@ button.add{
     color: white;
     cursor: pointer;
     padding: 10px 25px;
-    height: 61px;
+    height: 62px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -80,6 +80,7 @@ input{
     color: white;
     margin-right: 10px;
     padding: 10px 15px;
+    text-align: start;
 }
 
 .item.complet{
@@ -97,6 +98,7 @@ input{
     color: #4d506e;
     margin-right: 10px;
     padding: 10px 15px;
+    text-align: start;
     text-decoration: line-through;
 }
 
@@ -124,7 +126,7 @@ button.delAll{
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10vh;
+    margin-top: 30px;
 }
 
 button.delAll:hover{
@@ -134,6 +136,9 @@ button.delAll:hover{
 
 .icon-center{
     width: 100%;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 900px) {

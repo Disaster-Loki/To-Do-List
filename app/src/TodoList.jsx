@@ -1,10 +1,12 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Icone from './assets/icon.png'
 import './TodoList.css';
 
 function TodoList()
 {
-    const [list, setList] = useState([]);
+    const listStorege = JSON.parse(localStorage.getItem('List')|| []);
+    //listStorege ? JSON.parse(listStorege) : 
+    const [list, setList] = useState(listStorege);
     const [newItem, setNewItem] = useState("");
 
     function addItem(form){
@@ -23,11 +25,17 @@ function TodoList()
     }
 
     function del(index){
-        const listAux = [...list]
+        const listAux = [...list];
+        listAux.splice(index, 1);
+        setList(listAux);
+    }
+
+    function delAll(){
+        setList([]);
     }
 
     return (
-        <div>
+        <div style={{textAlign: 'center'}}>
             <h2>To Do List</h2>
             <form onSubmit={addItem}>
                 <input id="enter" type="text" value={newItem}
@@ -51,8 +59,12 @@ function TodoList()
                             </div>
                           ))
                       }
+                      {
+                        list.length > 0 && 
+                        <button onClick={()=>delAll()} 
+                        className="delAll">All Delete</button>
+                      }
                 </div>
-                <button className="delAll">All Delete</button>
             </div>
         </div>
     )
